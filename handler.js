@@ -1,6 +1,8 @@
 'use strict';
 
 const connectToDatabase = require('./db');
+const Note = require('./models/Note');
+
 
 module.exports.create = (event, context, callback) => {
   context.callbackWaitsForEmptyEventLoop = false;
